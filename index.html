@@ -1,0 +1,427 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link rel="stylesheet" href="style.css">
+      <title>Uber-clone</title>
+    </head>
+
+    <body>
+      <header>
+        <nav>
+          <div class="nav-wrapper transparent">
+            <a id="brand" class="left brand-logo l1" href="#">Uber</a>
+            <a href="#" class="right sidenav-trigger" data-target="mobile-menu">
+              <i class="material-icons">drag_handle</i>
+            </a>
+            <ul id="left-nav" class="left hide-on-med-and-down">
+              <li><a class="btn-small companyDropDownTrigger" href="#!" data-target="companyDropDownMenu">Company<i class="material-icons right">arrow_drop_down</i> </a></li>
+              <li><a class="btn-small" href="#">Safety</a></li>
+              <li><a class="btn-small" href="#">Help</a></li>
+            </ul>
+            <ul class="right hide-on-med-and-down">
+              <li><a class="btn-small languageDropDownTrigger" href="#!" data-target="languageDropDownMenu"><i class="material-icons left">language</i>NL-NL</a></li>
+              <li><a class="btn-small productsDropDownTrigger" href="#!" data-target="productsDropDownMenu"><i class="material-icons left">view_list</i>Products</a></li>
+              <li><a class="btn-small loginDropDownTrigger" href="#!" data-target="loginDropDownMenu"><i class="material-icons left">account_box</i>login</a></li>
+              <li><a id="signup" class="btn-small white black-text" href="#">Sign Up</a></li>
+            </ul>
+            <ul class="right hide-on-large-only">
+              <li><a class="btn-small" href="#"><i class="material-icons">account_box</i></a></li>
+              <li><a id="signup" class="btn-small white black-text" href="#">Sign Up</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <!--Dropdown Structure-->
+        <ul id="companyDropDownMenu" class="dropdown-content white grey-text">
+          <li><a href="#!">About us</a></li>
+          <li><a href="#!">How UberWorks</a></li>
+          <li><a href="#!">Global Citizenship</a></li>
+          <li><a href="#!">Newsroom</a></li>
+          <li><a href="#!">Investors</a></li>
+          <li><a href="#!">Blog</a></li>
+          <li><a href="#!">Working at Uber</a></li>
+        </ul>   
+        
+        <!--Dropdown Structure-->
+        <ul id="mobileMenuDropDown" class="dropdown-content">
+          <li><a href="#!">About us</a></li>
+          <li><a href="#!">How UberWorks</a></li>
+          <li><a href="#!">Global Citizenship</a></li>
+          <li><a href="#!">Newsroom</a></li>
+          <li><a href="#!">Investors</a></li>
+          <li><a href="#!">Blog</a></li>
+          <li><a href="#!">Working at Uber</a></li>
+        </ul> 
+
+        <!--Dropdown Structure-->
+        <ul id="languageDropDownMenu" class="dropdown-content">
+          <p>Select your prefered language</p>
+          <li><a href="#!">English</a></li>
+          <li><a href="#!">Dutch</a></li>
+        </ul> 
+
+        <!--Dropdown Structure-->
+        <ul id="productsDropDownMenu" class="dropdown-content">
+          <li><a href="#!"><i class="material-icons left">home</i>Home screen</a></li>
+          <li><a href="#!"><i class="material-icons left">directions_car</i>To get in</a></li>
+          <li><a href="#!"><i class="material-icons left">donut_large</i>To drive</a></li>
+          <li><a href="#!"><i class="material-icons left">restaurant_menu</i>Food</a></li>
+          <li><a href="#!"><i class="material-icons left">restaurant</i>Restaurants</a></li>
+          <li><a href="#!"><i class="material-icons left">airport_shuttle</i>Uber Freight</a></li>
+          <li><a href="#!"><i class="material-icons left">motorcycle</i>JUMP</a></li>
+          <li><a href="#!"><i class="material-icons left">train</i>Ov</a></li>
+          <li><a href="#!"><i class="material-icons left">business_center</i>For Business</a></li>
+          <li><a href="#!"><i class="material-icons left">flight_takeoff</i>Elevate</a></li>
+          <li><a href="#!"><i class="material-icons left">attach_money</i>Money</a></li>
+        </ul> 
+
+        <!--Dropdown Structure-->
+        <ul id="loginDropDownMenu" class="dropdown-content">
+          <li><a href="#!">Log in as an Uber partner<i class="material-icons right">arrow_forward</i></a></li>
+          <li><a href="#!">Log in as a passanger<i class="material-icons right">arrow_forward</i></a></li>
+        </ul> 
+
+        <!--Mobile sidenav menu-->
+        <ul id="mobile-menu" class="sidenav">
+          <li><a class="mobileMenuDropDownTrigger" href="#!" data-target="mobileMenuDropDown">Company<i class="material-icons right">arrow_drop_down</i> </a></li>
+          <li><a href="#">Safety</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#"><i class="material-icons left">view_list</i>Products</a></li>
+          <li><a href="#"><i class="material-icons left">language</i>NL-NL</a></li>
+        </ul>
+      </header>
+
+      <section class="section" id="services">
+        <div class="row tabs-container">
+          <div class="col s12 l10 offset-l1">
+            <ul id="services-list" class="tabs valign-wrapper">
+              <li class="tab col s1 l2">
+                <a href="#receivereward" class="active black-text" onclick="setServicesBackgroundImage('Product-Masthead-Desktop_2.jpg')">
+                  <i class="material-icons">network_cell</i><br>
+                  <span class="hide-on-med-and-down">Reward</span>
+                </a>
+              </li>
+              <li class="tab col s1 l2">
+                <a href="#togetin" class="white black-text center-align" onclick="setServicesBackgroundImage('ride_2x.jpg')">
+                  <i class="material-icons">directions_car</i><br>
+                  <span class="hide-on-med-and-down">To get in</span>
+                </a>
+              </li>
+              <li class="tab col s1 l2">
+                <a href="#food" class="white black-text center-align" onclick="setServicesBackgroundImage('eats-hero-desktop-6.jpg')">
+                  <i class="material-icons">restaurant_menu</i><br>
+                  <span class="hide-on-med-and-down">Food</span>
+                </a>
+              </li>
+              <li class="tab col s1 l2">
+                <a href="#uberfreight" class="white black-text center-align" onclick="setServicesBackgroundImage('Freight_2x.jpg')">
+                  <i class="material-icons">airport_shuttle</i><br>
+                  <span class="hide-on-med-and-down">Freight</span>
+                </a>
+              </li>
+              <li class="tab col s1 l2">
+                <a href="#forbusiness" class="white black-text center-align" onclick="setServicesBackgroundImage('Business_2x.jpg')">
+                  <i class="material-icons">business_center</i><br>
+                  <span class="hide-on-med-and-down">Business</span>
+                </a>
+              </li>
+              <li class="tab col s1 l2">
+                <a href="#ov" class="white black-text center-align" onclick="setServicesBackgroundImage('Transit_2x.jpg')">
+                  <i class="material-icons">train</i><br>
+                  <span class="hide-on-med-and-down">Ov</span>
+                </a>
+              </li>
+              <li class="tab col s1 l2">
+                <a href="#bicycleandscooter" class="white black-text center-align" onclick="setServicesBackgroundImage('bikes_2x.jpg')">
+                  <i class="material-icons">motorcycle</i><br>
+                  <span class="hide-on-med-and-down">Bicycle and scooter</span>
+                </a>
+              </li>
+              <li class="tab col s1 l2">
+                <a href="#elevate" class="white black-text center-align" onclick="setServicesBackgroundImage('Fly_2x.jpg')">
+                  <i class="material-icons">flight_takeoff</i><br>
+                  <span class="hide-on-med-and-down">Elevate</span>
+                </a>
+              </li>
+            </ul>
+            <div id="receivereward" class="col s4 l6 white tab-content-frame">
+              <div class="tab-content">
+                <h2>Get behind the wheel and make money</h2>
+                <p>Drive through the platform with the largest network of active passengers.</p>
+                <a href="#" class="btn black white-text">Sign up as an Uber partner</a><br>
+                <a href="#" class="btn white black-text">More information about driving and delivery</a>
+              </div>
+            </div>
+            <div id="togetin" class="col s4 l6 white tab-content-frame">
+              <div class="tab-content">
+                <h2>Request a ride now</h2>
+                <input type="text" placeholder="Enter the pick-up location">
+                <input type="text" placeholder="Enter destination">
+                <a href="#" class="btn black white-text">Apply now</a>
+                <a href="#" class="btn grey">Schedule for a later date</a>
+              </div>
+            </div>
+            <div id="food" class="col s4 l6 white tab-content-frame">
+              <div class="tab-content">
+                <h2>Discover delicious dishes</h2>
+                <p>Order from your favorite restaurants and have your food delivered.</p>
+                <a href="#" class="btn black white-text">Order now</a><br>
+                <a href="#" class="btn grey">Do you have a restaurant? Partner with Uber Eats</a>
+              </div>
+            </div>
+            <div id="uberfreight" class="col s4 l6 white tab-content-frame">
+              <div class="tab-content">
+                <h2>A new perspective on freight transport</h2>
+                <p>More transparency, so that shippers and carriers can work together optimally.</p>
+                <a href="#" class="btn black white-text">More information for shippers</a>
+                <a href="#" class="btn grey">Register as a career</a>
+              </div>
+            </div>
+            <div id="forbusiness" class="col s4 l6 white tab-content-frame">
+              <div class="tab-content">
+                <h2>Transport your teams and employees</h2>
+                <p>Uber for Business makes business journeys, expense reports and customer experiences easier.</p>
+                <a href="#" class="btn black white-text">read more</a><br>
+              </div>
+            </div>
+            <div id="ov" class="col s4 l6 white tab-content-frame">
+              <div class="tab-content">
+                <h2>More options for public transport</h2>
+                <p>Uber's software and transportation solutions help local agencies develop the best ways to advance their community.</p>
+                <a href="#" class="btn black white-text">read more</a><br>
+                </div>
+            </div>
+            <div id="bicycleandscooter" class="col s4 l6 white tab-content-frame">
+              <div class="tab-content">
+                <h2>Grab the bike or scooter</h2>
+                <p>Go further and have more fun with electric bikes and scooters.</p>
+                <a href="#" class="btn black white-text">Arrange a ride</a><br>
+              </div>
+            </div>
+            <div id="elevate" class="col s4 l6 white tab-content-frame">
+              <div class="tab-content">
+                <h2>Shared rides at unprecedented heights</h2>
+                <p>We are building the future of transportation by enabling ride-sharing via air transport in the city.</p>
+                <a href="#" class="btn black white-text">read more</a><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="cities">
+        <div class="row">
+          <div class="col l10 offset-l1">
+            <h3 class="col l6">We move more than 10,000 cities</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col l10 offset-l1">
+            <a href="#" class="col l2 transparent black-text">View all cities</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="row">
+          <div class="col s10 m10 l10 offset-l1">
+            <h3 class="col s10 m10 l6">Uber for Business</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s10 m10 l10 offset-l1">
+            <p class="col l6">The power of Uber at work</p>
+          </div>
+        </div>
+        <div class="row">
+          <div id="uberforbusiness" class="col l10 offset-l1">
+            <div class="businesscontent">
+              <img src="images/business-eater-horz2x.png" alt="business-eater">
+              <h4>Meals at work</h4>
+              <p>Surprise your employees with their favorite meals that are delivered wherever they work.</p>
+              <a href="#" class="transparent black-text">read more</a>
+            </div>
+            <div class="businesscontent">
+              <img src="images/employee-travel-horz2x.png" alt="employee-travel">
+              <h4>Employee trips</h4>
+              <p>No more worrying about business trips. Create road and commute programs for employees.</p>
+              <a href="#" class="transparent black-text">read more</a>
+            </div>
+            <div class="businesscontent">
+              <img src="images/ride-coordinator-horz2x.png" alt="ride-coordinator">
+              <h4>Rides offered</h4>
+              <p>Make a lasting impression. Arrange door-to-door rides for your customers and guests.</p>
+              <a href="#" class="transparent black-text">read more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="row">
+          <div id="safety" class="col l10 offset-l1">
+            <div class="safetycontent col s12 m12 l6 right">
+              <img src="images/Safety_ilo.svg" alt="Safety_ilo">
+            </div>
+            <div class="safetycontent col s12 m12 l5">
+              <div class="safetycontent-left">
+                <h3>Your safety is important to us</h3>
+                <p>With every new safety feature and standard in our Community Guidelines, we are committed to providing a safe environment for our users.</p>
+                <div>
+                  <a href="#" class="transparent black-text btn-small col s6 m6">Read more about the Community Guidelines</a>
+                </div>
+                <div>
+                  <a href="#" class="transparent black-text btn-small col s4 m4">View all safety functions</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div id="aboutcompany" class="col l10 offset-l1">
+            <div class="aboutcompanycontent">
+              <i class="material-icons">people</i>
+              <h4>About us</h4>
+              <p>Discover how we came to be, what motivates us and how we create opportunities.</p>
+              <a href="#" class="transparent black-text">read more</a>
+            </div>
+            <div class="aboutcompanycontent">
+              <i class="material-icons">subject</i>
+              <h4>Newsroom</h4>
+              <p>View announcements about our latest releases, initiatives and partnerships.</p>
+              <a href="#" class="transparent black-text">read more</a>
+            </div>
+            <div class="aboutcompanycontent">
+              <i class="material-icons">home</i>
+              <h4>Global Citizenship</h4>
+              <p>Learn how we are committed to having a positive impact on the cities in which we operate.</p>
+              <a href="#" class="transparent black-text">read more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div id="enrollment" class="col l10 offset-l1">
+            <a href="#" class="transparent black-text enrollmentcontent valign-wrapper">
+              <h3>Sign up as an Uber partner</h3>
+              <i class="medium material-icons">arrow_forward</i>
+            </a>
+            <a href="#" class="transparent black-text enrollmentcontent valign-wrapper">
+              <h3>Register as a passanger</h3>
+              <i class="medium material-icons">arrow_forward</i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="page-footer black">
+        <div class="footer-container">
+          <h5 id="brandname"><a href="#" class="white-text">Uber</a></h5>
+          <a href="#" id="helpcenter" class="white-text">To Help Center</a>
+          <div class="row">
+            <div id="footer-lists">
+              <div class="footerlist col s12 m4 l3">
+                <h5>Company</h5>
+                <ul>
+                  <li><a href="#" class="white-text">About us</a></li>
+                  <li><a href="#" class="white-text">Newsroom</a></li>
+                  <li><a href="#" class="white-text">Investors</a></li>
+                  <li><a href="#" class="white-text">Blog</a></li>
+                  <li><a href="#" class="white-text">Working at Uber</a></li>
+                </ul>
+              </div>
+              <div class="footerlist col s12 m6 l3">
+                <h5>Products</h5>
+                <ul>
+                  <li><a href="#" class="white-text">To get in</a></li>
+                  <li><a href="#" class="white-text">To drive</a></li>
+                  <li><a href="#" class="white-text">Food</a></li>
+                  <li><a href="#" class="white-text">Uber for Business</a></li>
+                  <li><a href="#" class="white-text">Uber Freight</a></li>
+                </ul>
+              </div>
+              <div class="footerlist col s12 m4 l3">
+                <h5>Global Citizenship</h5>
+                <ul>
+                  <li><a href="#" class="white-text">Safety</a></li>
+                  <li><a href="#" class="white-text">Diversity</a></li>
+                  <li><a href="#" class="white-text">Transparency</a></li>
+                </ul>
+              </div>
+              <div class="footerlist col s12 m6 l3">
+                <h5>Innovation</h5>
+                <ul>
+                  <li><a href="#" class="white-text">ATG</a></li>
+                  <li><a href="#" class="white-text">AI</a></li>
+                  <li><a href="#" class="white-text">Elevate</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s12 m7 l3">
+              <ul class="col">
+                <li class="col l1"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li class="col l1"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="col l1"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li class="col l1"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li class="col l1"><a href="#"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+            <div class="col s12 m7 l6">
+              <ul class="col s12 m12 l12">
+                <li class="col l3"><a href="#" class="transparent white-text btn-small"><i class="material-icons left">language</i>Dutch</a></li>
+                <li class="col l6"><a href="#" class="transparent white-text btn-small"><i class="material-icons left">location_on</i>South of the Netherlands</a></li>
+              </ul>
+            </div>
+            <div class="col s12 m7 l3">
+              <ul class="col l12">
+                <li class="col l6"><a href="#" class="white-text app-store"><img src="app-store-google-4d63c31a3e.svg" alt="google-store"></a></li>
+                <li class="col l6"><a href="#" class="white-text app-store"><img src="app-store-apple-f1f919205b.svg" alt="apple-store"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <p>&copy; 2020  Uber Technologies Inc.</p>
+            <ul class="right-align l3">
+              <a href="#" class="right-align l2 white-text">Privacy</a>
+              <a href="#" class="right-align l2 white-text">Accessibility</a>
+              <a href="#" class="right-align l2 white-text">Conditions</a>
+            </ul>
+          </div>
+        </div>
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          $(".sidenav").sidenav();
+          $(".companyDropDownTrigger").dropdown();
+          $(".mobileMenuDropDownTrigger").dropdown();
+          $(".languageDropDownTrigger").dropdown();
+          $(".productsDropDownTrigger").dropdown();
+          $(".loginDropDownTrigger").dropdown();
+          $(".tabs").tabs();
+        })
+        
+        function setServicesBackgroundImage(imgSrc) {
+          let urlString = 'url(images/' + imgSrc + ')';
+          document.getElementById("services").style.backgroundImage = urlString;
+          }
+      </script>
+    </body>
+  </html>

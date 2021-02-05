@@ -1,0 +1,306 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url(https://fonts.gstatic.com/s/rubik/v10/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFV0UzdYPFkZVO.woff) format('woff');
+}
+
+* {
+    font-family: 'Rubik';
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 100%;
+}
+
+header{
+    background: black;
+}
+
+nav{
+    width: 90%;
+    margin: auto;
+    background: none;
+}
+
+#left-nav{
+    margin-left: 6vw;
+}
+
+nav .btn-small{
+    background: none;
+}
+
+nav .btn-small:hover{
+    background: #333333;
+    border-radius: 30px;
+}
+
+#signup{
+    border-radius: 30px;
+}
+
+#signup:hover{
+    background: #ccc6c6 !important;
+}
+
+#services{
+    background-image: url('images/Product-Masthead-Desktop_2.jpg');
+    background-size: cover;
+    height: 50em;
+}
+
+#services-list{
+    margin-top: 5vh;
+    height: 8.125em;
+}
+
+#services .btn{
+    margin: 0.5rem 0.5rem;
+}
+
+.tab a{
+    height: 6em !important;
+}
+
+.tab-content-frame{
+    height: fit-content;
+}
+
+.tab-content{
+    margin: 3rem 2.5rem 2.5rem 2.5rem;
+}
+
+#cities{
+    background-image: url('images/Modalities_banner_home.jpg');
+    background-size: cover;
+    height: 43.75em;
+}
+
+#uberforbusiness{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.businesscontent{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.businesscontent img{
+    width: 100%;
+    height: auto;
+}
+
+.businesscontent p{
+    margin-bottom: 4vh;
+}
+
+#safety{
+    margin-top: 10vh;
+}
+
+.safetycontent-left p{
+    margin-bottom: 4vh;
+    text-align: justify;
+}
+
+.safetycontent img{
+    width: 100%;
+    height: auto;
+}
+
+#aboutcompany{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 20vh;
+}
+
+.aboutcompanycontent{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.aboutcompanycontent p{
+    margin-bottom: 4vh;
+}
+
+#enrollment{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 10vh;
+}
+
+.enrollmentcontent{
+    width: 45%;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+}
+
+.enrollmentcontent h3{
+    width: 75%;
+    float: left;
+}
+
+footer{
+    margin-top: 10vh;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+}
+
+.footer-container{
+    width: 90%;
+    margin: 5vh auto;
+}
+
+#brandname{
+    margin-bottom: 5vh;
+}
+
+#footer-lists{
+    margin-top: 4vh;
+    margin-bottom: 5vh;
+}
+
+.footerlist li{
+    margin-top: 2vh;
+}
+
+.footerlist a:hover{
+    color: #968b8b !important;
+}
+
+footer .btn-small:hover{
+    background: #333333 !important;
+    border-radius: 30px;
+}
+
+.app-store img{
+    width: 100%;
+}
+
+.footer-copyright{
+    margin-top: 5vh;
+}
+
+.footer-copyright a{
+    margin-right: 2vw;
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    body{
+        font-size: 100%;
+    }
+    
+    #services-list{
+        position: absolute;
+        top: 3rem;
+        height: 8em;
+    }
+    
+    .tab-content-frame{
+        position: absolute;
+        top: 15rem;
+        width: 100% !important;
+    }
+    
+    #services{
+        margin-top: 40rem;
+        width: 100%;
+        background-size: cover;
+        height: 40em;
+    }
+
+    #cities{
+        background-image: url('images/modalities_3x2.jpg');
+        background-size: cover;
+        height: 40em;
+    }
+
+    .businesscontent{
+        width: 45%;
+        margin: 2rem 1rem;
+    }
+
+    .safetycontent-left{
+        margin-top: 15rem;
+    }
+
+    #aboutcompany{
+        margin-top: 5rem;
+    }
+
+    .aboutcompanycontent{
+        width: 45%;
+        margin: 2rem 1rem;
+    }
+
+    .footerlist{
+        margin-top: 3rem;
+    }
+
+    #enrollment{
+        margin-top: 5rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    body{
+        font-size: 100%;
+    }
+    
+    #services-list{
+        position: absolute;
+        top: 2rem;
+    }
+    
+    .tab-content-frame{
+        position: absolute;
+        top: 13rem;
+        width: 100% !important;
+    }
+
+    .tab-content{
+        margin: 2rem 3rem 2rem 1rem;
+    }
+    
+    #services{
+        margin-top: 40rem;
+        width: 100%;
+        background-size: cover;
+        height: 15em;
+    }
+
+    #cities{
+        background-image: url('images/modalities_3x2.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 40em;
+    }
+
+    .businesscontent{
+        width: 100%;
+        margin: 2rem 1rem;
+    }
+
+    .aboutcompanycontent{
+        width: 100%;
+        margin: 2rem 1rem;
+    }
+
+    .enrollmentcontent{
+        width: 100%;
+        margin: 2rem 1rem;
+    }
+
+    .footerlist{
+        margin-top: 2rem;
+    }
+}
